@@ -1,5 +1,3 @@
-package src;
-
 public class PolygonTester {
     public static void main(String[] args) {
         System.out.println("\nThis is the output with 5 sides, side length of 6.865, and a name of pentagon");

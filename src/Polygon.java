@@ -25,6 +25,22 @@ public class Polygon
     public double getSideLength() { return sideLength; }
     public String getShape() { return shape; }
 
+
+    public void setSideLength(double newLength) { sideLength = newLength; }
+    public void setNumSides(int newNumSides)
+    {
+        if(newNumSides > 2)
+        {
+            numSides = newNumSides;
+        }
+    }
+    public void setShapeName(String newName) { shape = newName; }
+
+
+    public double calcPerimeter()
+    {
+        return numSides * sideLength;
+    }
     public String toString()
     {
         if(invalid) { return "invalid shape"; }
